@@ -1,9 +1,13 @@
 import Heading from '@/components/Header/Heading'
+import Head from 'next/head'
 
 const Pagination = () => {
 	return (
 		<div>
-			<Heading text={'Pagination'} tag={'h1'} />
+			<Head>
+				<title>Pagination</title>
+			</Head>
+			<Heading text={'Pagination'} />
 		</div>
 	)
 }

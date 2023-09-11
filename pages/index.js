@@ -1,9 +1,13 @@
 import Heading from '@/components/Header/Heading'
+import Head from 'next/head'
 
 export default function Home() {
 	return (
 		<>
-			<Heading text={'Home'} tag={'h1'} />
+			<Head>
+				<title>Home</title>
+			</Head>
+			<Heading text={'Home'}/>
 		</>
 	)
 }
