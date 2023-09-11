@@ -14,7 +14,6 @@ export const getStaticProps = async () => {
 
 	return {
 		props: { articles: data },
-		
 	}
 }
 
@@ -25,15 +24,14 @@ const Articles = ({ articles }) => {
 				<title>Articles</title>
 			</Head>
 			<Heading text={'Articles: '} />
-			{articles && 
-				articles.map( ({id,name,email}) => (
+			{articles &&
+				articles.map(({ id, name, email }) => (
 					<li>
 						<Link href={`/articles/${id}`} key={id} name={name}>
-							<Article key={id} name={name} id={id} email={email}/>
+							<Article key={id} name={name} id={id} email={email} />
 						</Link>
 					</li>
-				) )
-			}
+				))}
 		</>
 	)
 }
