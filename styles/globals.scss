@@ -17,11 +17,19 @@
 }
 
 body {
-	color: rgb(var(--foreground-rgb));
 	padding: 20px;
 }
 
 header,
 footer {
-	background-color: aqua;
+	background-color: darkkhaki;
+}
+
+li {
+	@apply p-4 list-none;
+}
+h1 {
+	font-size: 36px;
+	font-weight: 700;
+	color: lightsalmon;
 }
