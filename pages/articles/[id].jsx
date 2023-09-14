@@ -1,4 +1,5 @@
-import Heading from '@/components/Heading/Heading'
+
+import Heading from '@/components/Header/Heading'
 import Head from 'next/head'
 import Image from 'next/image'
 import { useRouter } from 'next/router'
